@@ -10,8 +10,9 @@ Draws a circle.
 
 import math
 from turtle import Turtle
+import turtleutilities as tu
 
-def drawCircle(t, x, y, radius):
+def drawCircle(t: Turtle, x: int | float, y: int | float, radius: int | float) -> None:
     """Draws a circle with the given center point and radius."""
     t.up()
     t.goto(x + radius, y)
@@ -20,9 +21,9 @@ def drawCircle(t, x, y, radius):
     for count in range(120):
         t.left(3)
         t.forward(2.0 * math.pi * radius / 120.0)
-    
 
-def main():
+
+def main() -> None:
     x = 50
     y = 75
     radius = 100
@@ -30,3 +31,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    # i made a rock paper scissors c# script
+    
